@@ -9,11 +9,11 @@ df = df[['Close']].dropna()
 df.rename(columns={'Close': 'KRW/USD'}, inplace=True)
 
 # 2. 평균 환율
-avg_rate = df['KRW/USD'].mean()
+avg_rate = df['KRW/USD'].mean().item()   # 숫자만 꺼내기
 
 # 3. 변동성(연율화)
 returns = df['KRW/USD'].pct_change().dropna()
-volatility = returns.std() * np.sqrt(252)
+volatility = (returns.std() * np.sqrt(252)).item()   # 숫자만 꺼내기
 
 # 4. 결과 출력
 print("최근 1개월 평균 환율:", round(avg_rate, 2), "KRW/USD")
