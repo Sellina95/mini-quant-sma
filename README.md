@@ -1,4 +1,4 @@
-# Mini Quant Backtest – SMA Crossover (1-day build)
+# Mini Python Backtest – exchange rates (1-day build)
 
 이 프로젝트는 **최근 1개월간 원·달러 환율 평균/변동성 구하기**을 아주 간단한 파이썬 코드로 백테스트하는 예시입니다.  
 지원서/면접용으로 “파이썬+금융데이터 다룰 줄 안다”를 보여주는 **작은 증빙** 역할을 합니다.
